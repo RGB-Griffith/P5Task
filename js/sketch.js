@@ -10,6 +10,7 @@ function draw(){
     let circleY=200;
     let circleDiam=50;
     circle(circleX,circleY,circleDiam);
+    circleX+=1;
     //task 2 flipped
     /* line(0,200,400,200);
     if(mouseY <= 200){
