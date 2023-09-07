@@ -19,7 +19,7 @@ function draw(){
             topX, topY, 
             rightX, rightY);
     
-    if(mouseMoved){
+    //if(mouseMoved){}
         let topX=200;
         let topY=200;
         let leftX=topX-100;
