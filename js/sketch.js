@@ -6,8 +6,10 @@ function setup(){
 
 function draw(){
     background(120,120,120);
-    line(0,200,400,200);
-    //if(mouseMoved){}
+
+    //task 2 flipped
+    /* line(0,200,400,200);
+    if(mouseY <= 200){
     let topX=200;
     let topY=200;
     let leftX=topX+100;
@@ -18,16 +20,23 @@ function draw(){
             leftX, leftY,
             topX, topY, 
             rightX, rightY);
-    
-    //if(mouseMoved){}
-        let topX=200;
-        let topY=200;
-        let leftX=topX-100;
-        let leftY=topY+100;
-        let rightX=topX+100;
-        let rightY=topY+100;
+    }
+    if(mouseY >= 200) {
+        let topX2=200;
+        let topY2=200;
+        let leftX2=topX-100;
+        let leftY2=topY+100;
+        let rightX2=topX+100;
+        let rightY2=topY+100;
         triangle(
-                leftX, leftY,
-                topX, topY, 
-                rightX, rightY);
+                leftX2, leftY2,
+                topX2, topY2, 
+                rightX2, rightY2);
+           } */ 
+
+    //task 3 catch a circle
+    circleX=200
+    circleY=200;
+    circleDiam=50;
+    circle(circleX,circleY,circleDiam);
 }
