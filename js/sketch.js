@@ -6,7 +6,10 @@ function setup(){
 
 function draw(){
     background(120,120,120);
-
+    let circleX=200; //let is needed otherwise no output :)
+    let circleY=200;
+    let circleDiam=50;
+    circle(circleX,circleY,circleDiam);
     //task 2 flipped
     /* line(0,200,400,200);
     if(mouseY <= 200){
@@ -35,8 +38,5 @@ function draw(){
            } */ 
 
     //task 3 catch a circle
-    circleX=200
-    circleY=200;
-    circleDiam=50;
-    circle(circleX,circleY,circleDiam);
+    
 }
