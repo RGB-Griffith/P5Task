@@ -7,4 +7,5 @@ function setup(){
 function draw(){
     background(120,120,120);
     line(0,200,400,200);
+    triangle(20,20,20);
 }
