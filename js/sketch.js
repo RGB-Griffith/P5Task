@@ -1,7 +1,7 @@
 "use strict";
 let circleX=200; //let is needed otherwise no output :)
 let circleY=200;
-let circleDiam=50;
+let circleDiam=5;
 let velocity=6;
 
 let topX=200;
