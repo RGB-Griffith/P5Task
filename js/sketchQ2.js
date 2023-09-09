@@ -1,48 +1,50 @@
 "use strict";
 let circX = 200;
-let circY = 200;
+let circY = 400;
 let directionX = 0;
 let directionY = 0;
-//let circX = 50;
-//let circY = 0;
-
-//let img;
-//function preload() {
-  //img = loadImage('images/icon.png');
-//}
+let moving = false;
 
 function setup(){
     createCanvas(400,400);
 }
 
 function draw(){
-    background(120,120,120);
+    background(120,120,0);
     circle(circX,circY,25);
-    //image(img,10,10);
-    if(keyPressed(RIGHT_ARROW)){
-      directionX+=6;
+    if (keyIsPressed){
+      moving = true;
+
+        if(keyPressed(RIGHT_ARROW)){
+          directionX+=6;
+        }
+        if(keyPressed(LEFT_ARROW)){
+          directionX-=6;
+        }
+        if(keyPressed(DOWN_ARROW)){
+          directionY+=6;
+        }
+        if(keyPressed(UP_ARROW)){
+          directionY-=6;
+        }
     }
-    if(keyPressed(LEFT_ARROW)){
-      directionX-=6;
-    }
-    if(keyPressed(DOWN_ARROW)){
-      directionY+=6;
-    }
-    if(keyPressed(UP_ARROW)){
-      directionY-=6;
-    }
-    if(circX>399){
-        circX=1
-    }
-    if (circX<1){
-        circX=399
-    }
-    if (circY>399){
-        circY=1
-    }
-    if (circY<1){
-        circY=399
-    }
+  if (moving === true){
+    circX += directionX;
+    circY += directionY;
+
+        if(circX>width){
+            circX=0;
+        }
+        if (circX<0){
+            circX=width;
+        }
+        if (circY>height){
+            circY=0;
+        }
+        if (circY<0){
+            circY=height;
+        }
+  }
 }
 
     /*function mouseMoved(){
@@ -93,4 +95,6 @@ function draw(){
     
     
 } */
+
+
     
