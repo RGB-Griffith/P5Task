@@ -37,14 +37,21 @@ function draw(){
     background(120,120,120);
     fill("red");
     rect(rect1X,rect1Y,rect1W,rect1H);
+    //fill("yellow");
+        circle(rect1X,rect1Y,25);
     fill("yellow");
     rect(rect2X,rect2Y,rect2W,rect2H);
+        rect(rect2X,rect2Y,25,25);
     fill("blue");
     rect(rect3X,rect3Y,rect3W,rect3H);
+        triangle(rect3X,rect3Y,rect3X+25,rect3Y+25,rect3X+50,rect3Y+50);
     fill("red");
     rect(rect4X,rect4Y,rect4W,rect4H);
+        rect(rect4X,rect4Y,25,50);
     fill("yellow");
     rect(rect5X,rect5Y,rect5W,rect5H);
+
     fill("blue");
     rect(rect6X,rect6Y,rect6W,rect6H);
+        rect(rect6X,rect6Y,25,25);
 }

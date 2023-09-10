@@ -1,6 +1,6 @@
 "use strict";
 let circX = 200;
-let circY = 400;
+let circY = 425;
 let directionX = 0;
 let directionY = 0;
 let moving = false;
@@ -10,42 +10,55 @@ function setup(){
 }
 
 function draw(){
-    background(120,120,0);
+    background(120,120,120);
+    fill(144,238,144);
     circle(circX,circY,25);
     if (keyIsPressed){
       moving = true;
 
-        if(keyPressed(RIGHT_ARROW)){
-          directionX+=6;
+        if(keyIsDown(RIGHT_ARROW)){
+          directionX=6;
+          directionY=0;
         }
-        if(keyPressed(LEFT_ARROW)){
-          directionX-=6;
+        if(keyIsDown(LEFT_ARROW)){
+          directionX=-6;
+          directionY=0;
         }
-        if(keyPressed(DOWN_ARROW)){
-          directionY+=6;
+        if(keyIsDown(DOWN_ARROW)){
+          directionY=6;
+          directionX=0;
         }
-        if(keyPressed(UP_ARROW)){
-          directionY-=6;
+        if(keyIsDown(UP_ARROW)){
+          directionY=-6;
+          directionX=0;
         }
     }
   if (moving === true){
     circX += directionX;
     circY += directionY;
 
-        if(circX>width){
-            circX=0;
+        if(circX>399){
+            circX=1;
         }
-        if (circX<0){
-            circX=width;
+        if (circX<1){
+            circX=399;
         }
-        if (circY>height){
-            circY=0;
+        if (circY>399){
+            circY=1;
         }
-        if (circY<0){
-            circY=height;
+        if (circY<1){
+            circY=399;
         }
   }
+  if (mouseIsPressed) {
+    directionX = 0;
+    directionY = 0;
+  }
 }
+  //if (mouseClicked){
+    //moving = false;
+  //}
+
 
     /*function mouseMoved(){
       circX=mouseX;

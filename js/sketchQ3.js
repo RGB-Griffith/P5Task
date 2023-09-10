@@ -12,4 +12,6 @@ function draw(){
     triangle(25,325,
             25,375,
             75,350);
+    text("1701ICT Creative Coding");
+    textFont()
 }
