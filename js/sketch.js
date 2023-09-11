@@ -29,6 +29,24 @@ let rect6Y=rect1Y+100;
 let rect6W=rect1W;
 let rect6H=rect1H;
 
+let trapX1 = 100;
+let trapY1 = 100;
+let trapX2 = 100;
+let trapY2 = 100;
+let trapX3 = 100;
+let trapY3 = 100;
+let trapX4 = 100;
+let trapY4 = 100;
+
+let paraX1 = 100;
+let paraY1 = 100;
+let paraX2 = 100;
+let paraY2 = 100;
+let paraX3 = 100;
+let paraY3 = 100;
+let paraX4 = 100;
+let paraY4 = 100;
+
 function setup(){
     createCanvas(600,600);
 }
@@ -47,11 +65,18 @@ function draw(){
         triangle(rect3X,rect3Y,rect3X+25,rect3Y+25,rect3X+50,rect3Y+50);
     fill("red");
     rect(rect4X,rect4Y,rect4W,rect4H);
-        rect(rect4X,rect4Y,25,50);
+        rect(rect4X,rect4Y,50,25);
     fill("yellow");
     rect(rect5X,rect5Y,rect5W,rect5H);
-
+        quad(trapX1,trapY1,
+            trapX2,trapY2,
+            trapX3,trapY3,
+            trapX4,trapY4);
     fill("blue");
     rect(rect6X,rect6Y,rect6W,rect6H);
-        rect(rect6X,rect6Y,25,25);
+    quad(paraX1,paraY1,
+        paraX2,paraY2,
+        paraX3,paraY3,
+        paraX4,paraY4);
+    
 }
