@@ -29,7 +29,7 @@ let rect6Y=rect1Y+100;
 let rect6W=rect1W;
 let rect6H=rect1H;
 
-let trapX1 = 100;
+let trapX1 = rect5X;
 let trapY1 = 100;
 let trapX2 = 100;
 let trapY2 = 100;
@@ -38,9 +38,9 @@ let trapY3 = 100;
 let trapX4 = 100;
 let trapY4 = 100;
 
-let paraX1 = 100;
+let paraX1 = rect6X;
 let paraY1 = 100;
-let paraX2 = 100;
+let paraX2 = 250;
 let paraY2 = 100;
 let paraX3 = 100;
 let paraY3 = 100;
@@ -52,7 +52,7 @@ function setup(){
 }
 
 function draw(){
-    background(120,120,120);
+    background(255,0,0);
     fill("red");
     rect(rect1X,rect1Y,rect1W,rect1H);
     //fill("yellow");
@@ -68,15 +68,15 @@ function draw(){
         rect(rect4X,rect4Y,50,25);
     fill("yellow");
     rect(rect5X,rect5Y,rect5W,rect5H);
-        quad(trapX1,trapY1,
-            trapX2,trapY2,
-            trapX3,trapY3,
-            trapX4,trapY4);
+        //quad(trapX1,trapY1,
+            //trapX2,trapY2,
+            //trapX3,trapY3,
+            //trapX4,trapY4);
     fill("blue");
     rect(rect6X,rect6Y,rect6W,rect6H);
-    quad(paraX1,paraY1,
-        paraX2,paraY2,
-        paraX3,paraY3,
-        paraX4,paraY4);
+    //quad(paraX1,paraY1,
+        //paraX2,paraY2,
+        //paraX3,paraY3,
+        //paraX4,paraY4);
     
 }
