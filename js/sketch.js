@@ -1,5 +1,6 @@
 "use-strict";
 
+<<<<<<< HEAD
 function setup() {
     createCanvas(800, 600);
 }
@@ -16,3 +17,17 @@ function draw() {
     fill(0,0,255);
     rect(150, 150, 500, 100, 20);
 }
+=======
+
+let s;
+
+function setup(){
+    new Canvas(800,800);
+    s = new Sprite();
+}
+
+function draw(){
+    background(120,120,120);
+    
+}
+>>>>>>> 0c8cbc0a6ddfa88d9ef3399aee6b9e27017cb820
